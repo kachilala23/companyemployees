@@ -29,3 +29,12 @@ In a system that is designed around DI, you may find many classes requesting the
 In this case, it is helpful to have a class that manages and provides dependencies to classes through the constructor.
 These classes are referred to as containers or more specifically, Inversion of Control containers. An IoC container is
 essentially a factory that is responsible for providing instances of the types that are requested from it.
+
+With the Repository pattern, we create an abstraction layer between the data access and the business logic layer of an application. 
+By using it, we are promoting a more loosely coupled approach to access our data in the database.
+
+Also it makes our data access layer testable.
+
+Add-Migration DatabaseCreation
+Update-Database
+
